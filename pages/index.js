@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/styles.module.css'
+import '../styles/global.css'
 import Cookies from 'js-cookie';
-import Bot from "../public/bot-svgrepo-com.svg";
+import Bot from "@/public/bot-svgrepo-com.svg?url";
  
 import Step1 from '../components/Step1';
 import Step2 from '../components/Step2';
@@ -80,7 +81,7 @@ export default function Home() {
       {renderStep()}
       {isChatbot && <Chatbot onCBBtnClick={handleCBBtnClick} />}
       <button className={styles.chatbotIcon} onClick={handleCBBtnClick}>
-        <img src={Bot.src} alt="Bot Icon" width={"80%"} />
+        <img src={Bot} alt="Bot Icon" width={"80%"} />
       </button>
     </div>
   );
