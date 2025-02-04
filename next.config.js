@@ -22,9 +22,9 @@ const nextConfig = {
     });
     return config;
   },
-  // 빌드 캐시 설정
-  outputFileTracing: true,
-  outputFileTracingRoot: path.join(__dirname, '..'),
+  cache: {
+    type: 'filesystem',
+  },
 };
 
 module.exports = nextConfig; // ✅ 반드시 CommonJS 방식

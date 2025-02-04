@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/styles.module.css'
-import '../styles/global.css'
 import Cookies from 'js-cookie';
 import Bot from "@/public/bot-svgrepo-com.svg?url";
  
