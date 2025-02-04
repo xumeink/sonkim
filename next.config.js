@@ -1,3 +1,5 @@
+const path = require('path'); //path 모듈
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
